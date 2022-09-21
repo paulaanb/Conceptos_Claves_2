@@ -9,7 +9,7 @@ class Punto:
     def __str__(self):
         return  "({}, {})".format(self.coordenada_X, self.coordenada_Y)
 #Definimos el cuadrante para poder trabajar con todos los ejes.
-    def cuadrante(self):
+   def cuadrante(self):
         if self.coordenada_X > 0 and self.coordenada_Y > 0:
             print("{} pertenece al primer cuadrante".format(self))
         elif self.coordenada_X < 0 and self.coordenada_Y > 0:
@@ -28,9 +28,20 @@ class Punto:
     def vector(self, p):
         print("El vector entre {} y {} es ({}, {})".format(
             self, p, p.coordenada_X - self.coordenada_X, p.coordenada_Y - self.coordenada_Y) )
-#Definimos la distancia entre dos puntos medinate una formula .
+#Definimos la distancia entre dos puntos medinate una formula.
     def distancia(self, p):
         d = math.sqrt ( (p.coordenada_X - self.coordenada_X)**2 + (p.coordenada_Y - self.coordenada_Y)**2 )
         print("La distancia entre los puntos {} y {} es {}".format(
             self, p, d))
+#Definimos la función rectángulo y todas sus clases.
+    class Rectangulo:
+    def __init__(self, pInicial=Punto(), pFinal=Punto()):
+        self.pInicial = pInicial
+        self.pFinal = pFinal
+    def base(self):
+        print("La base del rectángulo es {}".format( self.vBase ) )
+    def altura(self):
+        print("La altura del rectángulo es {}".format( self.vAltura ) )
+    def area(self):
+        print("El área del rectángulo es {}".format( self.vArea ) )
 
