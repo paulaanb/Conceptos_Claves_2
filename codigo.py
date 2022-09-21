@@ -39,9 +39,15 @@ class Punto:
         self.pInicial = pInicial
         self.pFinal = pFinal
     def base(self):
+        self.vBase = abs(self.pFinal.x - self.pInicial.x)
         print("La base del rectángulo es {}".format( self.vBase ) )
     def altura(self):
+        self.vAltura = abs(self.pFinal.y - self.pInicial.y)
         print("La altura del rectángulo es {}".format( self.vAltura ) )
     def area(self):
+        self.vArea = self.vBase * self.vAltura
         print("El área del rectángulo es {}".format( self.vArea ) )
-
+ 
+       
+        
+        
