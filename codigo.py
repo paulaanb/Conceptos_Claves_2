@@ -24,4 +24,9 @@ class Punto:
             print("{} se sitúa sobre el eje Y".format(self))
         else:
             print("{} se encuentra sobre el origen".format(self))
+#Definimos la funcion vector.
+    def vector(self, p):
+        print("El vector entre {} y {} es ({}, {})".format(
+            self, p, p.coordenada_X - self.coordenada_X, p.coordenada_Y - self.coordenada_Y) )
+ 
 
