@@ -72,6 +72,3 @@ R = Rectangulo(A, B)
 R.base()
 R.altura()
 R.area()
-       
-        
-        
