@@ -6,6 +6,7 @@ Github:[https://github.com/paulaanb/Conceptos_Claves_2]
 # De que va el trabajo
 
 Teoría previa
+
 En este ejercicio vas a trabajar el concepto de puntos, coordenadas y vectores sobre el plano cartesiano y cómo la programación Orientada a Objetos puede ser una excelente aliada para trabajar con ellos. No está pensado para que hagas ningún tipo de cálculo sino para que practiques la automatización de tareas. La entrega será individual en un repositorio con todos los archivos que se sean necesarios para la resolución del ejercicio
 
 Nota
@@ -191,3 +192,42 @@ Experimentación
     R.base()
     R.altura()
     R.area()
+
+# Unit test
+
+    #Importamos las librerias que podemos necesitar
+    import inspect
+    import re
+    import unittest
+    import math
+    import pandas as pd
+    import código as co
+    from datetime import datetime, timedelta
+    from main import *
+
+
+    class Rectangulo(unittest.TestCase):
+        def setUp(self):
+            pass
+
+        def test_base(self):
+            ejex = 3
+            ejey = 2
+            self.assertEqual(ejex, ejey)
+
+        def test_altura(self):
+            ejex = 3
+            ejey = 2
+            self.assertEqual(ejex, ejey)
+
+        def test_area(self):
+            ejex = 3
+            ejey = 2
+            self.assertEqual(ejex, ejey)
+
+        def tearDown(self):
+            pass
+
+
+    if __name__ == '__main__':
+        unittest.main()
